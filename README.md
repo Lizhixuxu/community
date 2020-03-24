@@ -8,6 +8,17 @@
 ##步骤
 - yum update
 - yum install git
+- mkdir App
+- cd App
+- git clone https://github.com/Lizhixuxu/community.git
+- yum install maven
+- mvn -v
+- mvn clean compile package
+- cp src/main/resources/application.properties src/main/resources/application-production.properties
+- mvn package
+- java -jar -Dspring.profiles.active=production target/community-0.0.1-SNAPSHOT.jar
+- ps -aux | grep java
+
 ## 资料
 [Spring 文档](https://spring.io/guides)
 [Spring Web](https://spring.io/guides/gs/serving-web-content/)
