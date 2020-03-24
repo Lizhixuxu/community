@@ -7,10 +7,17 @@
 [Github deploy key](https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys)
 [Bootstrap](https://v3.bootcss.com/getting-started)
 [Github OAuth](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/)
+[Pserson Infrom](https://api.github.com/users/Lizhixuxu)
+[Markdown 插件](http://editor.md.ipandao.com/)
+[UFile SDK](https://github.com/ucloud/ufile-sdk-java)
 
 ## 工具
 [Git](https://git-scm.com/download)
 [Visual Paradigm](https://www.visual-paradigm.com)
+[Flyway](https://flywaydb.org/getstarted/firststeps/maven)
+[Lombok](https://www.projectlombok.org)
+[Thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html)
+[Postman](http://chrome.google.com/webstore/detail/coohjcphdfgbiolnekdpbcijmhambjff)
 
 ##脚本
 ```sql
@@ -26,7 +33,8 @@ create table USER
     constraint USER_PK
         primary key (ID)
 );
-
-
-
+```
+```bash
+mvn flyway:migrate
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
 ```
