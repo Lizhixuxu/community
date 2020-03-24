@@ -106,7 +106,7 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>6.2.3</version>
                 <configuration>
-                    <url>jdbc:musql://10.9.105.2:3306/hinder</url>
+                    <url>jdbc:mysql://10.9.105.2:3306/hinder</url>
                     <user>root</user>
                     <password>xlz123456</password>
                 </configuration>

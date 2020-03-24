@@ -1,3 +1,3 @@
-alter table COMMENT
-    add content VARCHAR(10) NULL;
+alter table comment
+    add content varchar(10) null;
 
