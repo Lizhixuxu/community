@@ -55,7 +55,7 @@ public class QuestionService {
             page=totalPage;
         }
         paginationDTO.setPagination(totalPage, page);
-        Integer offset = size * (page - 1);
+        Integer offset = page<1 ? 0 : size * (page - 1);
      // List<Question> questions= questionMapper.selectByExampleWithRowbounds(questionExample, new RowBounds(offset, size));
         questionQueryDTO.setSize(size);
         questionQueryDTO.setPage(offset);
